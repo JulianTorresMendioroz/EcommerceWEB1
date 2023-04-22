@@ -1,7 +1,19 @@
+@font-face{
+    font-family: 'Norwester';
+    src: url(../fonts/font-norwester/webfonts/norwester.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 
+}
+body {
+    font-family: 'Norwester', sans-serif;
+}
+
+.container_fondo {
+    background-image: radial-gradient(to right, #ffffff 0%, rgba(146, 146, 146, 0.658) 100%);
 }
 
 .producto_imagen {
@@ -40,7 +52,7 @@
 .items_navbar{
 
     list-style-type: none;
-    color: white;
+    color: rgb(248, 244, 244);
     display: flex;
     justify-content: flex-end;
 
@@ -48,7 +60,7 @@
 }
 
 .li_items{ 
-
+    color:aliceblue;
     margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
@@ -57,9 +69,10 @@
 
 .titulo_principal {
 
-
         padding-top: 20px;
         text-align: center;
+        font-size: 60px;
+        color:rgb(0, 0, 0);
 
 
 }
@@ -68,6 +81,7 @@
 
     padding-top: 20px;
     text-align: center;
+    color:rgb(36, 36, 36);
 
 }
 
@@ -83,7 +97,7 @@
 .button_comprar {
 
         border-radius: 50px;
-        background-color: bisque;
+        background-color: rgb(255, 255, 255);
         color: black;
         height: 60px;
         width: 120px;
@@ -99,7 +113,7 @@
 }
 
 .titulo_producto {
-
+    color:rgb(17, 17, 17);
     text-align: center;
 
 

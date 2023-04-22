@@ -1,7 +1,20 @@
+@font-face{
+    font-family: 'Norwester';
+    src: url(../fonts/font-norwester/webfonts/norwester.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 
+}
+body {
+    font-family: 'Norwester', sans-serif;
+}
+.container_general {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    min-height: 100vh;
+    display:flex;
 }
 
 .producto_imagen {
@@ -58,8 +71,8 @@
 .titulo_principal {
 
 
-        padding-top: 20px;
-        text-align: center;
+    padding-top: 20px;
+    text-align: center;
 
 
 }
@@ -82,11 +95,13 @@
 
 .button_comprar {
 
+        margin-top: 20px;
         border-radius: 50px;
         background-color: bisque;
         color: black;
-        height: 60px;
-        width: 120px;
+        height: 30px;
+        width: 100px;
+        margin-left: 150px;
         
     }
 
@@ -115,8 +130,57 @@
     
 
 }
+/* NUEVA SECCION FORMULARIO PARA CONTACTO */
+.form{
+    font-family: 'Montserrat', sans-serif;
+    background-color:white;
+    margin-top:20%;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    width: 500px;
+}
 
+.form_container {
+    width:100%;
+    display:grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
 
+}
+.form_title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .4em;
+}
+
+.form_input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+}
+
+.form_input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+
+}
+.form_cta{
+    font-family:inherit;
+    font-size: 1rem;
+    background-color: #979696;
+    color: white;
+    border: none;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/* NUEVA SECCION FORMULARIO PARA CONTACTO */
 
 .footer{
 

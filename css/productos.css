@@ -1,7 +1,19 @@
+@font-face{
+    font-family: 'Norwester';
+    src: url(../fonts/font-norwester/webfonts/norwester.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 
+}
+body {
+    font-family: 'Norwester', sans-serif;
+}
+
+.container_fondo {
+    background-image: radial-gradient(to right, #ffffff 0%, rgba(146, 146, 146, 0.658) 100%);
 }
 
 .producto_imagen {
