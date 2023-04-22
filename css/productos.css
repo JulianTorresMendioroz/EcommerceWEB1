@@ -58,8 +58,8 @@
 .titulo_principal {
 
 
-        padding-top: 20px;
-        text-align: center;
+    padding-top: 20px;
+    text-align: center;
 
 
 }
@@ -82,11 +82,13 @@
 
 .button_comprar {
 
+        margin-top: 20px;
         border-radius: 50px;
         background-color: bisque;
         color: black;
-        height: 60px;
-        width: 120px;
+        height: 30px;
+        width: 100px;
+        margin-left: 150px;
         
     }
 
