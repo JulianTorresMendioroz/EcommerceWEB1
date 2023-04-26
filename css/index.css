@@ -12,16 +12,19 @@
 
 body {
     font-family: 'Bruno Ace';
+    background-image: linear-gradient(to right, rgb(7,8,10) 10%, black 100%);
 }
 
-.container_fondo {
-    background-image: radial-gradient(to right, #ffffff 0%, rgba(146, 146, 146, 0.658) 100%);
-}
 
 .producto_imagen {
-
-    height: 400px;
-    width: 400px;
+    display:flex;
+    justify-content: center;
+    min-height: 400px;
+    min-width: 400px;
+    max-height: 400px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10%;
 
 }
 
@@ -71,66 +74,70 @@ body {
 
 .titulo_principal {
 
-        padding-top: 20px;
-        text-align: center;
-        font-size: 60px;
-        color:rgb(0, 0, 0);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    color:rgb(255, 255, 255);
 
 
 }
 
 .slogan {
 
-    padding-top: 20px;
+    padding-top: 25px;
     text-align: center;
-    color:rgb(36, 36, 36);
+    color:rgb(255, 255, 255);
+}
 
+.container_principal{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 5%;
 }
 
 .container_home1 {
+    display: flex;
+    justify-content:center;
+    padding-top: 50px; 
+    flex-direction: row;
 
+}
+.container_home2 {
     display: flex;
     justify-content: center;
-    padding-top: 70px;
-    
+    padding-top: 50px;
+    flex-direction: row;
+   
 
 }
 
-.button_comprar {
-
-        border-radius: 50px;
-        background-color: rgb(255, 255, 255);
-        color: black;
-        height: 60px;
-        width: 120px;
-        
-    }
-
 .productos_home {
-
-    padding-left: 150px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    max-width: 500px;
+    max-height: 600px;
 
 
 }
 
 .titulo_producto {
-    color:rgb(17, 17, 17);
-    text-align: center;
-
-
-
-}
-
-.container_home2 {
-
     display: flex;
+    text-align: center;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    
-
+    color:#ffffff;
+    padding-bottom: 20px;
+    margin: auto;
+    padding-top:40px;
 }
+
+
 
 
 
@@ -141,8 +148,9 @@ body {
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 45px;
+    text-align: center;
 
 }
 
@@ -150,4 +158,9 @@ body {
 
     color: white;
 
+}
+
+a {
+    list-style: none;
+    color: white;
 }

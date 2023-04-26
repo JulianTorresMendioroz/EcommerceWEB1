@@ -13,11 +13,20 @@
 
 body {
     font-family: 'Bruno Ace';
+    background-image: linear-gradient(to right, rgb(7,8,10) 10%, black 100%);
 }
+.contact {
+    padding-top: 20px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+
+}
+
 .container_general {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-    min-height: 100vh;
+
+    min-height: 600px;
     display:flex;
+    flex-direction:column;
 }
 
 .producto_imagen {
@@ -50,6 +59,7 @@ body {
     background-color: black;
     display: flex;
     flex-direction: row;
+    position: sticky;
    
 }
 
@@ -76,7 +86,7 @@ body {
     padding-top: 20px;
     text-align: center;
     font-size: 60px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 
 }
 
@@ -84,6 +94,7 @@ body {
 
     padding-top: 20px;
     text-align: center;
+    color:rgb(255, 255, 255);
 
 }
 
@@ -96,31 +107,9 @@ body {
 
 }
 
-.button_comprar {
-
-        margin-top: 20px;
-        border-radius: 50px;
-        background-color: bisque;
-        color: black;
-        height: 30px;
-        width: 100px;
-        margin-left: 150px;
-        
-    }
-
-.productos_home {
-
-    padding-left: 150px;
-    align-items: center;
-
-
-}
 
 .titulo_producto {
-
     text-align: center;
-
-
 
 }
 
@@ -134,10 +123,16 @@ body {
 
 }
 /* NUEVA SECCION FORMULARIO PARA CONTACTO */
+.form_box {
+    display: flex;
+    justify-content: center;
+    position:sticky;
+    padding-bottom:5%;
+}
 .form{
     font-family: 'Montserrat', sans-serif;
     background-color:white;
-    margin-top:20%;
+    margin-top:5%;
     border-radius: 1em;
     padding: 3.5em 1.5em;
     width: 500px;
@@ -192,13 +187,16 @@ body {
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-evenly;
     padding-top: 45px;
-
 }
 
 .footer_texto {
 
     color: white;
 
+}
+a {
+    list-style: none;
+    color: white;
 }
