@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Bruno Ace';
-    background-image: linear-gradient(to right, rgb(7,8,10) 10%, black 100%);
+    background-image: linear-gradient(to right, rgb(7,8,10) 10%, black 90%);
 }
 
 .producto_imagen {
@@ -40,13 +40,16 @@ body {
     width: 50px;
     padding-top: 23px;
     padding-left: 160px;
-    
 }
 
+nav {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
 .navbar {
 
     height: 100px;
-    width: auto;
     background-color: black;
     display: flex;
     flex-direction: row;
