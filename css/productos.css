@@ -35,47 +35,77 @@ body {
 }
 
 .logo_carrito {
-
     height: 50px;
     width: 50px;
-    padding-top: 23px;
-    padding-left: 160px;
-}
-
+    padding-left: auto;
+    margin-left: auto;
+} 
 nav {
     position: fixed;
     top: 0%;
     width: 100%;
+    margin-left: auto;
 }
-.navbar {
 
+.navbar_home {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 40px;
+    padding-left: 20px;
+    justify-content: baseline;
+    
+}
+
+.navbar_productos {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 40px;
+    padding-left: 20px;
+    justify-content: baseline;
+    
+}
+
+.navbar_contacto {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 40px;
+    padding-left: 20px;
+    justify-content: baseline;
+}
+.navbar_carrito {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 25px;
+    padding-left: 20px;
+    justify-content: baseline;
+    
+}
+
+
+
+
+.navbar {
     height: 100px;
     background-color: black;
     display: flex;
-    flex-direction: row;
-   
 }
 
 .items_navbar{
 
     list-style-type: none;
-    color: white;
+    color: rgb(248, 244, 244);
     display: flex;
-    justify-content: flex-end;
-
+    justify-content: space-around;
+    margin-right:0px;
    
 }
 
-.li_items{ 
-
-    margin-left: 250px;
-    padding-top: 40px;
-    padding-left: 20px;
-    
-}
-
 a {
-
+    text-decoration-line: none;
     color: white;
 
 }

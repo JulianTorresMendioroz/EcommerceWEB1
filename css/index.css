@@ -38,17 +38,56 @@ body {
 .logo_carrito {
     height: 50px;
     width: 50px;
-    padding-top: 23px;
-    padding-left: 160px;
+    padding-left: auto;
     margin-left: auto;
-}
-
+} 
 nav {
     position: fixed;
     top: 0%;
     width: 100%;
     margin-left: auto;
 }
+
+.navbar_home {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 40px;
+    padding-left: 20px;
+    justify-content: baseline;
+    
+}
+
+.navbar_productos {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 40px;
+    padding-left: 20px;
+    justify-content: baseline;
+    
+}
+
+.navbar_contacto {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 40px;
+    padding-left: 20px;
+    justify-content: baseline;
+}
+.navbar_carrito {
+    display: flex;
+    color:aliceblue;
+    margin-left: 250px;
+    padding-top: 25px;
+    padding-left: 20px;
+    justify-content: baseline;
+    
+}
+
+
+
 
 .navbar {
     height: 100px;
@@ -66,17 +105,9 @@ nav {
    
 }
 
-.li_items{ 
-
-    color:aliceblue;
-    margin-left: 250px;
-    padding-top: 40px;
-    padding-left: 20px;
-    
-}
 
 a {
-
+    text-decoration-line: none;
     color: white;
 
 }
@@ -148,25 +179,35 @@ a {
 }
 
 
-
-
-
 .footer{
-
     height: 60px;
     width: auto;
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     padding-top: 45px;
     text-align: center;
 
 }
-
-.footer_texto {
-
+.footer_elements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.footer_signing{
+    display: flex;
+    justify-content: baseline;
     color: white;
+    font-weight: 600;
+    padding-right:9%;
+}
+.footer_texto {
+    display: flex;
+    justify-content: baseline;
+    color: white;
+    font-weight: 600;
 
 }
 
