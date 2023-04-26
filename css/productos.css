@@ -38,9 +38,9 @@ body {
 
     height: 50px;
     width: 50px;
-    padding-left: 250px;
     padding-top: 23px;
-
+    padding-left: 160px;
+    
 }
 
 .navbar {
@@ -69,6 +69,12 @@ body {
     padding-top: 40px;
     padding-left: 20px;
     
+}
+
+a {
+
+    color: white;
+
 }
 
 .titulo_principal {
@@ -159,6 +165,23 @@ body {
     }
 
 .productos_home {
+
+    padding-left: 150px;
+    align-items: center;
+
+
+}
+
+.titulo_producto {
+
+    text-align: center;
+
+
+
+}
+
+.container_home2 {
+
     display: flex;
     flex-direction: column;
     padding-left: 5%;

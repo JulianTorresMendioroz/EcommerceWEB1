@@ -39,9 +39,9 @@ body {
 
     height: 50px;
     width: 50px;
-    padding-left: 250px;
     padding-top: 23px;
-
+    padding-left: 160px;
+    
 }
 
 .navbar {
@@ -50,7 +50,7 @@ body {
     width: auto;
     background-color: black;
     display: flex;
-    flex-direction: row;
+    
    
 }
 
@@ -59,17 +59,23 @@ body {
     list-style-type: none;
     color: rgb(248, 244, 244);
     display: flex;
-    justify-content: flex-end;
-
+    justify-content: space-around;
    
 }
 
 .li_items{ 
+
     color:aliceblue;
     margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
     
+}
+
+a {
+
+    color: white;
+
 }
 
 .titulo_principal {
