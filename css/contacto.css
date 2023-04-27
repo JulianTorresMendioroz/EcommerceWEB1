@@ -217,24 +217,34 @@ a {
 
 /* NUEVA SECCION FORMULARIO PARA CONTACTO */
 
+/*-----------FOOTER----------------------------------*/
 .footer{
-
     height: 60px;
     width: auto;
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
     padding-top: 45px;
-}
+    text-align: center;
 
+}
+.footer_elements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.footer_signing{
+    display: flex;
+    justify-content: baseline;
+    color: white;
+    font-weight: 600;
+    padding-right:9%;
+}
 .footer_texto {
-
+    display: flex;
+    justify-content: baseline;
     color: white;
-
-}
-
-a {
-    list-style: none;
-    color: white;
+    font-weight: 600;
 }
