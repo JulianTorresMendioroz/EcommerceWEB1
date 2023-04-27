@@ -10,14 +10,9 @@
 </head>
 
 <body>
-
-
     <nav class="navbar">
-
         <a href="../index.html"> <img class="logo_navbar" src="../img/logo.jpeg" alt="logo"></a>
-
         <ul class="items_navbar">
-
             <li class="navbar_home"><a href="../index.html">Inicio</a></li>
             <li class="navbar_productos"><a href="../sections/productos.html">Productos</a></li>
             <li class="navbar_contacto"><a href="../sections/contacto.html">Contacto</a></li>
@@ -26,48 +21,47 @@
         </ul>
     </nav>
 
-    <div class="container_fondo">
-
+    <div class="container_general">
         <h1 class="titulo_principal">Shopping Madagascar</h1>
-
         <h3 class="slogan">"Olvida las reglas, si te gusta, cómpralo."</h3>
-
+        <div class="div_tabla">
         <table class="content-table">
-            <thead>
-                <tr>
-                    <th>Posición</th>
-                    <th>Nombre</th>
-                    <th>Ventas cerradas</th>
-                    <th>Subárea</th>
+            <thead class="table_head">
+                <tr class="table_tr">
+                    <th class="table_th">Cantidad</th>
+                    <th class="table_th">Producto</th>
+                    <th class="table_th">Subtotal</th>
+                    <th class="table_th">Total</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Sara</td>
-                    <td>23</td>
-                    <td>Ventas a mayoristas</td>
+            <tbody class="table_body">
+                <tr class="table_tr">
+                    <td class="table_td_cantidad">1</td>
+                    <td class="table_td_tipo">Buzo DC</td>
+                    <td class="table_td_precio">$15.000</td>
+                    <td class="table_td_total">$15.000</td>
                 </tr>
-                <td>2</td>
-                <td>Ernesto</td>
-                <td>13</td>
-                <td>Cuentas empresariales</td>
+                <td class="table_td_cantidad">2</td>
+                <td class="table_td_tipo">Gorro</td>
+                <td class="table_td_precio">$15.000</td>
+                <td class="table_td_total">$30.000</td>
                 </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Nuria</td>
-                    <td>11</td>
-                    <td>Cuentas empresariales</td>
-                </tr>
+                <tr class="table_tr">
+                    <td class="table_td_cantidad">3</td>
+                    <td class="table_td_tipo">Remera Blanca</td>
+                    <td class="table_td_precio">$15.000</td>
+                    <td class="table_td_total">$45.000</td>
+                </tr>  
+            </tr>
             </tbody>
         </table>
-
-
-
+        </div>
+        <div class="button_container">
+            <a href="../sections/success.html"><button class="button_finalizar_compra">Finalizar compra</button></a>
+        </div>  
     </div>
 
     <footer class="footer">
-
         <h4 class="footer_texto">Madagascar Shooping - 2023 ©</h4>
         <p class="footer_texto">Website by Torres Mendioroz & Lorenzo ©</p>
         <h4 class="footer_texto" link href="../sections/contacto.html">Contacto</h4>
