@@ -112,6 +112,8 @@ a {
 
 .purchase_success_message {
     color: white;
+    padding-top: 10%;
+    padding-bottom: 12%;
 }
 /*------------FOOTER--------------------------------------------------*/
 .footer{
