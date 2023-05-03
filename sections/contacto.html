@@ -30,18 +30,19 @@
                 <input type="text" class="form_input" placeholder="Nombre y Apellido:">
                 <input type="text" class="form_input" placeholder="Email:">
                 <textarea class="form_input form_input--message" placeholder="Mensaje:"></textarea>
-                <input type="submit" value="Enviar" class="form_button">
-            </div>
-            <div class="captcha">
-                <p class="captcha_frase">Compruebe que es un humano</p>
-                <div class="container_captcha">
-                    <p class="captcha_view">array</p>
+                <button type="submit" class="form_button">Enviar</button>
+                <div class="captcha">
+                    <p>Compruebe que es un humano</p>
+                    <p class="captcha_view"></p>
                     <input class="input_captcha" type="text">
+                    <button class="captcha_verificacion">Verficar captcha</button>
+    
                 </div>
-                <p class="captcha_correcto_text">Resultado Captcha</p>
-                <button class="captcha_verificacion">Verificar Captcha</button>
             </div>
+           
+            
         </form>
+
     </div>
 
     <footer class="footer">
@@ -54,6 +55,6 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="../js/captcha.js"></script>
 </body>
 </html>
