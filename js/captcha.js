@@ -40,8 +40,6 @@ function verificarCaptcha (event) {
     
     } else if (arrayString !== inputCaptcha){
 
-        //revisar que no se repita el mensaje 
-
         let pIncorrecto = document.createElement("p");
         pIncorrecto.classList.add("captcha_correcto");
         pIncorrecto.innerHTML = "Captcha incorrecto";
