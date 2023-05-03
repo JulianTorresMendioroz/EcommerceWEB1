@@ -55,6 +55,7 @@ nav {
     top: 0%;
     width: 100%;
     margin-left: auto;
+    z-index: 1000;
 }
 
 .navbar_home {
@@ -135,14 +136,6 @@ a {
 
 }
 
-.container_home1 {
-
-    display: flex;
-    justify-content: center;
-    padding-top: 70px;
-    
-
-}
 
 
 .titulo_producto {
@@ -150,15 +143,6 @@ a {
 
 }
 
-.container_home2 {
-
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    
-
-}
 /* NUEVA SECCION FORMULARIO PARA CONTACTO */
 .form_box {
     display: flex;
@@ -171,7 +155,7 @@ a {
     background-color:white;
     margin-top:5%;
     border-radius: 1em;
-    padding: 3.5em 1.5em;
+    padding: 2em 1.5em;
     width: 500px;
 }
 
@@ -201,9 +185,8 @@ a {
     resize: none;
     padding: 1.8em 1em;
     margin-bottom: .5em;
-
 }
-.form_cta{
+.form_button{
     font-family:inherit;
     font-size: 1rem;
     background-color: #979696;
@@ -216,6 +199,118 @@ a {
 }
 
 /* NUEVA SECCION FORMULARIO PARA CONTACTO */
+/* SECCION CAPTCHA DENTRO DE FORM*/
+.captcha {
+    display:flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.captcha_frase {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.4em;
+    padding-bottom:5%;
+}
+/*CONTAINER INPUT Y VIEW*/
+.container_captcha {
+    border: solid 1px;
+    padding: 3%;
+    border-radius: .4em;
+    background-color: #979696;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-color: #81818177;
+}
+.captcha_view {
+    display:flex;
+    border-radius: .4em;
+    padding: 1em 2em;
+    width:30%;
+    border: solid 2px;
+    background-color: white;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*CONTAINER INPUT Y VIEW*/
+.input_captcha {
+    display: flex;
+    justify-content: center;
+    border-radius: .4em;
+    padding: 1em 2em;
+    width: 30%;
+    border: solid 2px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.captcha_verificacion {
+    font-family:inherit;
+    font-size: 1rem;
+    background-color: #979696;
+    color: white;
+    border: outset rgb(182, 182, 182);
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: .7em ;
+    border-radius: .3em;
+    cursor: pointer;
+    font-weight: 400;
+}
+.captcha_error_text {
+    border: groove 2px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: .2em;
+    margin-top:1%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 35%;
+    background-color: rgba(255, 0, 0, 0.418);
+}
+.captcha_correcto_text {
+    border: groove 2px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: .5em;
+    margin-top:3%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 35%;
+    background-color: rgba(0, 255, 13, 0.596);
+}
+.captcha_error {
+    display: flex;
+    justify-content: center;
+    border-radius: .4em;
+    padding: 1em 2em;
+    width: 30%;
+    border: solid 2px;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: rgba(255, 0, 0, 0.418);
+}
+.captcha_correcto {
+    display: flex;
+    justify-content: center;
+    border-radius: .4em;
+    padding: 1em 2em;
+    width: 30%;
+    border: solid 2px;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: rgba(0, 255, 13, 0.596);
+}
 
 /*-----------FOOTER----------------------------------*/
 .footer{

@@ -169,6 +169,7 @@ a {
     border: none;
     width: 150px;
     height: auto;
+    border: outset rgb(182, 182, 182);
     padding: 10px 10px;
     border-radius: .2em;
     cursor: pointer;
