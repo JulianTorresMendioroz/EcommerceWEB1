@@ -16,14 +16,20 @@ body {
 /*----------NAVBAR-------------------------------------------------------------------------------------------------------------*/
 .logo_navbar {
     height: 100px;
-    width: 150px;    
+    width: 150px;  
+    margin-left: auto;
+    padding-left: auto;  
 }
 
 .logo_carrito {
     height: 50px;
     width: 50px;
-    padding-left: auto;
-    margin-left: auto;
+    border-radius: 45px;
+    border: #ffffff solid;
+    padding-right: 2px;
+    
+    
+    
 } 
 
 nav {
@@ -45,7 +51,7 @@ nav {
 .navbar_productos {
     display: flex;
     color:aliceblue;
-    margin-left: 250px;
+    margin-left: 130px; /* le baje el px a este asi puedo ver el carrito */
     padding-top: 40px;
     padding-left: 20px;
     justify-content: baseline;
@@ -54,7 +60,7 @@ nav {
 .navbar_contacto {
     display: flex;
     color:aliceblue;
-    margin-left: 250px;
+    margin-left: 130px; /* le baje el px a este asi puedo ver el carrito */
     padding-top: 40px;
     padding-left: 20px;
     justify-content: baseline;
