@@ -30,23 +30,18 @@ buttonEnviar.disabled = true;
 function verificarCaptcha (event) {
 
     if(arrayString === inputCaptcha.value) {
-
-        let pCorrecto = document.createElement("p");
-        pCorrecto.classList.add("captcha_correcto");
+        let pCorrecto = document.querySelector("#captcha_result")
+        pCorrecto.classList.add("captcha_correcto_text");
         pCorrecto.innerHTML = "Captcha correcto";
-        divCaptcha.appendChild(pCorrecto);
+        inputCaptcha.classList.add("captcha_correcto")
         buttonCaptchaValid.disabled = true;
-       
     
     } else if (arrayString !== inputCaptcha){
 
-        //revisar que no se repita el mensaje 
-
-        let pIncorrecto = document.createElement("p");
-        pIncorrecto.classList.add("captcha_correcto");
+        let pIncorrecto = document.querySelector("#captcha_result")
+        pIncorrecto.classList.add("captcha_error_text");
         pIncorrecto.innerHTML = "Captcha incorrecto";
-        divCaptcha.appendChild(pIncorrecto);
-
+        inputCaptcha.classList.add("captcha_error")
     }
 
     event.preventDefault();

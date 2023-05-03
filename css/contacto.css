@@ -185,7 +185,6 @@ a {
     resize: none;
     padding: 1.8em 1em;
     margin-bottom: .5em;
-
 }
 .form_button{
     font-family:inherit;
@@ -226,16 +225,6 @@ a {
     justify-content: space-between;
     border-color: #81818177;
 }
-.input_captcha {
-    display: flex;
-    justify-content: center;
-    border-radius: .4em;
-    padding: 1em 2em;
-    width: 30%;
-    border: solid 2px;
-    font-size: 1.2em;
-    font-weight: 400;
-}
 .captcha_view {
     display:flex;
     border-radius: .4em;
@@ -249,6 +238,17 @@ a {
     text-transform: uppercase;
 }
 /*CONTAINER INPUT Y VIEW*/
+.input_captcha {
+    display: flex;
+    justify-content: center;
+    border-radius: .4em;
+    padding: 1em 2em;
+    width: 30%;
+    border: solid 2px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
 .captcha_verificacion {
     font-family:inherit;
     font-size: 1rem;
@@ -263,52 +263,54 @@ a {
     cursor: pointer;
     font-weight: 400;
 }
-.captcha_correcto {
+.captcha_error_text {
+    border: groove 2px;
     display: flex;
-    justify-content: right;
-    border-radius: .4em;
-    padding: 1em 2em;
-    margin-left: 35%;
-    margin-right: 35%;
-    background-color: rgba(0, 255, 13, 0.596);
-}
-.captcha_error {
-    display: flex;
-    justify-content: right;
-    border-radius: .4em;
-    padding: 1em 2em;
-    margin-left: 35%;
-    margin-right: 35%;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: .2em;
+    margin-top:1%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 35%;
     background-color: rgba(255, 0, 0, 0.418);
 }
 .captcha_correcto_text {
     border: groove 2px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: .5em;
+    margin-top:3%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 35%;
     background-color: rgba(0, 255, 13, 0.596);
+}
+.captcha_error {
     display: flex;
     justify-content: center;
-    font-size: 1em;
-    font-weight: 600;
-    border-radius: .2em;
-    margin-top:1%;
-    margin-left:auto;
-    margin-right:auto;
-    width: 35%;
-}
-
-.captcha_error_text {
-    border: groove 2px;
+    border-radius: .4em;
+    padding: 1em 2em;
+    width: 30%;
+    border: solid 2px;
+    font-size: 1.2em;
+    font-weight: 400;
     background-color: rgba(255, 0, 0, 0.418);
+}
+.captcha_correcto {
     display: flex;
     justify-content: center;
-    font-size: 1em;
-    font-weight: 600;
-    border-radius: .2em;
-    margin-top:1%;
-    margin-left:auto;
-    margin-right:auto;
-    width: 35%;
+    border-radius: .4em;
+    padding: 1em 2em;
+    width: 30%;
+    border: solid 2px;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: rgba(0, 255, 13, 0.596);
 }
-
 
 /*-----------FOOTER----------------------------------*/
 .footer{
