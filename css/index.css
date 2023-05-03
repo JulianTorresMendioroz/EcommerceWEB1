@@ -26,10 +26,7 @@ body {
     width: 50px;
     border-radius: 45px;
     border: #ffffff solid;
-    padding-right: 2px;
-    
-    
-    
+    padding-right: 4%;
 } 
 
 nav {
@@ -37,6 +34,8 @@ nav {
     top: 0%;
     width: 100%;
     margin-left: auto;
+    justify-content: space-around;
+    z-index: 1000;
 }
 
 .navbar_home {
@@ -45,50 +44,53 @@ nav {
     margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
-    justify-content: baseline;    
+    justify-content: center;
+    width: 25%;
 }
 
 .navbar_productos {
     display: flex;
     color:aliceblue;
-    margin-left: 130px; /* le baje el px a este asi puedo ver el carrito */
+    margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
-    justify-content: baseline;
+    justify-content: center;
+    width: 25%;
 }
 
 .navbar_contacto {
     display: flex;
     color:aliceblue;
-    margin-left: 130px; /* le baje el px a este asi puedo ver el carrito */
+    margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
-    justify-content: baseline;
+    justify-content: center;
+    width: 25%;
 }
-
 .navbar_carrito {
     display: flex;
     color:aliceblue;
     margin-left: 250px;
     padding-top: 25px;
     padding-left: 20px;
-    justify-content: baseline;
+    justify-content: center;
+    width: 25%;
 }
 
 .navbar {
     height: 100px;
     background-color: black;
     display: flex;
+    width: 100%;
 }
 
 .items_navbar{
-
     list-style-type: none;
     color: rgb(248, 244, 244);
     display: flex;
     justify-content: space-around;
     margin-right:0px;
-   
+    width: 100%;
 }
 
 a {

@@ -14,13 +14,6 @@ body {
 }
 /*-------------NAVBAR---------------------------------------------------------------------------------------------------------------*/
 
-nav {
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    margin-left: auto;
-}
-
 .logo_navbar {
     height: 100px;
     width: 150px;
@@ -31,7 +24,19 @@ nav {
     width: 50px;
     padding-left: auto;
     margin-left: auto;
+    border-radius: 45px;
+    border: #ffffff solid;
+    padding-right: 4%;
 } 
+
+nav {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    margin-left: auto;
+    justify-content: space-around;
+    z-index: 1000;
+}
 
 .navbar_home {
     display: flex;
@@ -39,7 +44,8 @@ nav {
     margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
-    justify-content: baseline;
+    justify-content: center;
+    width: 25%;
 }
 
 .navbar_productos {
@@ -48,7 +54,8 @@ nav {
     margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
-    justify-content: baseline; 
+    justify-content: center;
+    width: 25%;
 }
 
 .navbar_contacto {
@@ -57,22 +64,24 @@ nav {
     margin-left: 250px;
     padding-top: 40px;
     padding-left: 20px;
-    justify-content: baseline;
+    justify-content: center;
+    width: 25%;
 }
-
 .navbar_carrito {
     display: flex;
     color:aliceblue;
     margin-left: 250px;
     padding-top: 25px;
     padding-left: 20px;
-    justify-content: baseline;
+    justify-content: center;
+    width: 25%;
 }
 
 .navbar {
     height: 100px;
     background-color: black;
     display: flex;
+    width: 100%;
 }
 
 .items_navbar{
@@ -80,9 +89,8 @@ nav {
     color: rgb(248, 244, 244);
     display: flex;
     justify-content: space-around;
-    margin-right:0px;
+    width: 100%;
 }
-
 a {
     text-decoration-line: none;
     color: white;
