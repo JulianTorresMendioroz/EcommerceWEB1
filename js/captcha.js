@@ -1,62 +1,45 @@
 let divCaptcha = document.querySelector(".captcha");
 
-let arrayNumAleatorios = [];
+let captchaDigitos = "";
 
-for (let i = 0; i < 3; i++) {
-    let random = Math.random();
-    random = random * 3 + 1;
-    random = parseInt(random);
-    arrayNumAleatorios[i] = random; 
-}
+let resultadoAleatorio = Math.floor((Math.random() * 1000) + 100);
 
-let captchaView = document.querySelector('.captcha_view');
+captchaDigitos = resultadoAleatorio.toString();
 
-let arrayString = arrayNumAleatorios.join('');
+let captchaView = document.querySelector('.captcha_view'); 
 
-console.log(arrayString)
-captchaView.innerHTML = arrayString;
-
-let inputCaptcha = document.querySelector(".input_captcha");
+captchaView.innerHTML = captchaDigitos;
 
 let buttonCaptchaValid = document.querySelector(".captcha_verificacion");
 
-//Revisar boton para que no se pueda enviar antes el formulario
+let longitud = captchaDigitos.length;
 
-let buttonEnviar = document.querySelector(".form_button");
+let inputCaptcha = document.querySelector(".input_captcha"); 
 
-buttonEnviar.disabled = true;
-
+inputCaptcha.maxLength=`${longitud}`;
 
 function verificarCaptcha (event) {
 
-    if(arrayString === inputCaptcha.value) {
+    if(captchaDigitos === inputCaptcha.value) {
+        
         let pCorrecto = document.querySelector("#captcha_result")
         pCorrecto.classList.add("captcha_correcto_text");
-        pCorrecto.innerHTML = "Captcha correcto";
+        pCorrecto.innerHTML = "Formulario aceptado, datos enviados correctamente ";
         inputCaptcha.classList.add("captcha_correcto")
-        buttonCaptchaValid.disabled = true;
+        buttonCaptchaValid.classList.add("captcha_correcto");
     
-    } else if (arrayString !== inputCaptcha){
+    } else if (captchaDigitos !== inputCaptcha.value){
 
-        let pIncorrecto = document.createElement("p");
-        pIncorrecto.classList.add("captcha_correcto");
-        pIncorrecto.innerHTML = "Captcha incorrecto";
+        let pIncorrecto = document.querySelector("#captcha_result");
+        pIncorrecto.classList.add("captcha_error_text");
+        pIncorrecto.innerHTML = "Captcha incorrecto, valide el captcha correctamente";
         inputCaptcha.classList.add("captcha_error")
+
+
+        
     }
 
     event.preventDefault();
 }
 
 buttonCaptchaValid.addEventListener("click", verificarCaptcha);
-
-
-
-
-
-// let numerosAleatorios = (Math.random() * 5) + 1;
-
-// console.log(parseInt(numerosAleatorios));
-
-
-
-
