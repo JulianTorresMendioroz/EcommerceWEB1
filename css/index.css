@@ -24,10 +24,7 @@ body {
 .logo_carrito {
     height: 50px;
     width: 50px;
-    /*border-radius: 45px;
-    border: #ffffff solid; */
-    padding-left: 260%; /* le doy mas padding, ya que corri los items */
-
+    padding-left: 260%;
     
     
 } 
@@ -40,7 +37,7 @@ nav {
     justify-content: space-around;
     z-index: 1000;
     display: flex;
-    flex-direction: end; /* agrego flex end */
+    flex-direction: end;
 }
 
 .navbar_home {

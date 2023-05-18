@@ -196,12 +196,12 @@ a {
     }
 
 .productos_home {
-    display: flex;
+      display: flex;
     flex-direction: column;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
     justify-content: center;
-    padding-top: 3%;
+    padding-top: 4%;
     padding-bottom: 3%;
     max-width: 500px;
     max-height: 600px;
