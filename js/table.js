@@ -31,6 +31,30 @@ function deleteValues() {
   seeTable();
 }
 
+function autoProd(){
+
+    let obj1 = {
+        cantidad: 2,
+        producto: "Remera blanca",
+    }
+
+    let obj2 = {
+      cantidad: 3,
+        producto: "Gorro",
+    }
+
+    let obj3 = {
+      cantidad: 1,
+      producto: "Mochila"
+    }
+
+
+
+    tableArray.push(obj1, obj2, obj3);
+    seeTable();
+
+}
+
 function addProduct() {
   let inputTableProd = document.querySelector(".input_prod").value;
   let inputTableQuantity = document.querySelector(".input_quantity").value;
@@ -50,4 +74,6 @@ buttonAddProd.addEventListener("click", addProduct);
 let buttonDeleteAll = document.querySelector(".delete_product");
 buttonDeleteAll.addEventListener("click", deleteValues);
 
+let buttonAutoProd = document.querySelector(".auto_product");
+buttonAutoProd.addEventListener("click", autoProd)
 

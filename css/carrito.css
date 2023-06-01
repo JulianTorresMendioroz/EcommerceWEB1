@@ -45,6 +45,17 @@ width: 250px;
 }
 
 
+.auto_producto {
+
+    background-color: yellow;
+    color: white;
+    width: 80px;
+    height: 100px;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
 .add_product{
 
     background-color: green;
@@ -52,6 +63,7 @@ width: 250px;
     width: 80px;
     height: 100px;
     align-items: center;
+    border-radius: 20px;
 
 }
 
@@ -63,6 +75,7 @@ width: 250px;
     width: 80px;
     height: 100px;
     align-items: center;
+    border-radius: 20px;
 
 }
 
