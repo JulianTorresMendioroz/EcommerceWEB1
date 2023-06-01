@@ -1,4 +1,8 @@
-let tableArray = [];
+let tableArray = [{
+    "cantidad": 3,
+    "producto": "Buzo Negro"
+
+}];
 
 function seeTable() {
   let contentTable = document.querySelector(".content-table tbody");
@@ -19,6 +23,8 @@ function seeTable() {
     contentTable.appendChild(fila);
   }
 }
+
+seeTable();
 
 function deleteValues() {
   tableArray = [];
