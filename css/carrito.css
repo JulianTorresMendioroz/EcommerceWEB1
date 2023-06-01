@@ -3,82 +3,6 @@
     padding: 0;
 }
 
-
-
-
-.inputs{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-    
-    
-
-}
-
-.input_prod{
-
-height: 40px;
-width: 250px;
-
-
-}
-
-.input_quantity{
-
-    
-    height: 40px;
-    width: 250px;
-        
-    
-
-}
-
-.buttons_table{
-
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-    
-
-}
-
-
-.auto_producto {
-
-    background-color: yellow;
-    color: white;
-    width: 80px;
-    height: 100px;
-    align-items: center;
-    border-radius: 20px;
-
-}
-
-.add_product{
-
-    background-color: green;
-    color: white;
-    width: 80px;
-    height: 100px;
-    align-items: center;
-    border-radius: 20px;
-
-}
-
-
-.delete_product{
-
-    background-color: red;
-    color: white;
-    width: 80px;
-    height: 100px;
-    align-items: center;
-    border-radius: 20px;
-
-}
-
 @font-face{
     font-family: 'Bruno Ace';
     src: url(../fonts/BrunoAce-Regular.ttf);
@@ -285,6 +209,107 @@ a {
     cursor: pointer;
     font-weight: 400;
 }
+
+.inputs{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    
+    
+
+}
+
+.input_prod{
+
+height: 40px;
+width: 250px;
+
+
+}
+
+.input_quantity{
+
+    
+    height: 40px;
+    width: 250px;
+        
+    
+
+}
+
+.buttons_table{
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    justify-content: space-around;
+    
+
+}
+
+
+.auto_product {
+
+    display: flex;
+    font-family:inherit;
+    font-size: 1rem;
+    background-color: #9c9c9c;
+    color: rgb(0, 0, 0);
+    border: white 2px;
+    padding: .7em 1%;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+    width: 150px;
+    height: 100px;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.add_product{
+
+    display: flex;
+    font-family:inherit;
+    font-size: 1rem;
+    background-color: #9c9c9c;
+    color: rgb(0, 0, 0);
+    border: white 2px;
+    padding: .7em 1%;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+    width: 150px;
+    height: 100px;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+
+.delete_product{
+
+    display: flex;
+    font-family:inherit;
+    font-size: 1rem;
+    background-color: #9c9c9c;
+    color: rgb(0, 0, 0);
+    border: white 2px;
+    padding: .7em 1%;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+    width: 80px;
+    width: 150px;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+
+
 /*------------- LISTA -------------------------------------------------------------------------------------------------------------------------------------*/
 
 .li_price{
