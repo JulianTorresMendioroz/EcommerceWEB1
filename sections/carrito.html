@@ -24,7 +24,25 @@
     <div class="container_general">
         <h1 class="titulo_principal">Shopping Madagascar</h1>
         <h3 class="slogan">"Olvida las reglas, si te gusta, cómpralo."</h3>
-        <div class="div_tabla">
+
+        <div class="inputs">
+
+        <h3 class="slogan" >Elija el producto entre: Buzo Negro, Gorro, Remera Blanca y Mochila</h3>
+        <input class="input_prod" type="text">
+
+        <h3 class="slogan" >Elija la cantidad</h3>
+        <input class="input_quantity" type="text">
+
+        </div>
+
+        <div class="buttons_table">
+
+        <button class="add_product">AGREGAR PRODUCTO Y CANTIDAD</button>
+        <button class="delete_product">ELIMINAR DATOS</button>
+
+        </div>
+
+       <div class="div_tabla">
         <table class="content-table">
             <thead class="table_head">
                 <tr class="table_tr">
@@ -32,25 +50,10 @@
                     <th class="table_th">Producto</th>
                 </tr>
             </thead>
-            <tbody class="table_body">
-                <tr class="table_tr">
-                    <td class="table_td_cantidad">1</td>
-                    <td class="table_td_tipo">Buzo DC</td>
-                
-                </tr>
-                <td class="table_td_cantidad">2</td>
-                <td class="table_td_tipo">Gorro</td>
-             
-                </tr>
-                <tr class="table_tr">
-                    <td class="table_td_cantidad">3</td>
-                    <td class="table_td_tipo">Remera Blanca</td>
-          
-                </tr>  
-            </tr>
+            <tbody>
             </tbody>
         </table>
-        </div>
+    </div>
 
         <ol>
         <li class="li_price">Buzo DC - SUB TOTAL: $15.000</li>
@@ -74,4 +77,6 @@
     </footer>
     
 </body>
+
+<script src="../js/table.js"></script>
 </html>

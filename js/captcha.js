@@ -1,3 +1,5 @@
+//CAPTCHA
+
 let divCaptcha = document.querySelector(".captcha");
 
 let captchaDigitos = "";
