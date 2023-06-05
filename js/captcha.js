@@ -36,8 +36,6 @@ function verificarCaptcha (event) {
         pIncorrecto.classList.add("captcha_error_text");
         pIncorrecto.innerHTML = "Captcha incorrecto, valide el captcha correctamente";
         inputCaptcha.classList.add("captcha_error")
-
-
         
     }
 
