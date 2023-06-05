@@ -48,8 +48,6 @@ function autoProd(){
       producto: "Mochila"
     }
 
-
-
     tableArray.push(obj1, obj2, obj3);
     seeTable();
 
