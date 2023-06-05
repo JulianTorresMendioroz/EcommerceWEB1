@@ -8,21 +8,33 @@
     <title>Shop Madagascar</title>
 </head>
 <body>
-   
+    <div class="NavMobile">
+        <div class="logo">
+          <a href="..//index.html" class="aMobile"> <img src="../img/logo.jpeg" alt="logo" class="logoMobile"></a>
+        <div class="btn_menu"><a>MENÚ</a></div>
+      </div>
+      <div class="menu">
+        <ul class="navigation">
+              <li><a href="..//index.html">Inicio</a></li>
+              <li><a href="../sections/productos.html">Productos</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="../sections/carrito.html">Carrito</a></li>
+          </ul>
+      </div>  
+    </div>
     <nav class="navbar">
         <a href="../index.html"> <img class="logo_navbar" src="../img/logo.jpeg" alt="logo"></a>
         <ul class="items_navbar">
             <li class="navbar_home"><a href="../index.html">Inicio</a></li>
             <li class="navbar_productos"><a href="../sections/productos.html">Productos</a></li>
             <li class="navbar_contacto"><a href="#">Contacto</a></li>
-            <li class="navbar_carrito"><a href="../sections/carrito.html"><img class="logo_carrito" src="../img/carrito.jpeg" alt="carrito"></a></li>
+            <li class="navbar_carrito"><a href="../sections/carrito.html">Carrito</a></li>
         </ul>
     </nav>
     <div class="container_general">
         <h1 class="titulo_principal">Shopping Madagascar</h1>
         <h2 class="slogan">"Olvida las reglas, si te gusta, cómpralo."</h2>
-        <h2 class="contact">Contacto</h2>
-
+        <h2 class="contactTitle">Contacto</h2>
         <div class="form_box">
         <form class="form">    
             <div class="form_container">
@@ -38,15 +50,10 @@
                         <input class="input_captcha" type="text">
                     </div>
                         <p id="captcha_result"></p>
-                        
                     <button class="captcha_verificacion">VERIFICAR Y ENVIAR</button>
-    
                 </div>
             </div>
-           
-            
         </form>
-
     </div>
 
     <footer class="footer">
@@ -58,7 +65,7 @@
           </a>
         </div>
     </footer>
-
+    <script src="../js/menu.js"></script>
     <script src="../js/captcha.js"></script>
 </body>
 </html>

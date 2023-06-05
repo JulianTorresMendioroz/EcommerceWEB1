@@ -8,25 +8,38 @@
     <title>Shop Madagascar</title>
   </head>
   <body>
+    <div class="NavMobile">
+          <div class="logo">
+            <a href="#" class="aMobile"> <img src="img/logo.jpeg" alt="logo" class="logoMobile"></a>
+          <div class="btn_menu"><a>MENÚ</a></div>
+        </div>
+      
+        <div class="menu">
+          <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./sections/productos.html">Productos</a></li>
+                <li><a href="./sections/contacto.html">Contacto</a></li>
+                <li><a href="./sections/carrito.html">Carrito</a></li>
+            </ul>
+        </div>  
+    </div>
     <nav class="navbar">
-      <a href="#">
-        <img class="logo_navbar" src="./img/logo.jpeg" alt="logo"/>
-      </a>
-
-      <ul class="items_navbar">
-        <li class="navbar_home"><a href="#">Inicio</a></li>
-        <li class="navbar_productos">
-          <a href="./sections/productos.html">Productos</a>
-        </li>
-        <li class="navbar_contacto">
-          <a href="./sections/contacto.html">Contacto</a>
-        </li>
-        <li class="navbar_carrito">
-          <a href="./sections/carrito.html"
-            ><img class="logo_carrito" src="./img/carrito.jpeg" alt="carrito"/>
+          <a href="#">
+            <img class="logo_navbar" src="./img/logo.jpeg" alt="logo"/>
           </a>
-        </li>
-      </ul>
+
+          <ul class="items_navbar">
+            <li class="navbar_home"><a href="#">Inicio</a></li>
+            <li class="navbar_productos">
+              <a href="./sections/productos.html" class="anchorNav">Productos</a>
+            </li>
+            <li class="navbar_contacto">
+              <a href="./sections/contacto.html" class="anchorNav">Contacto</a>
+            </li>
+            <li class="navbar_carrito">
+              <a href="./sections/carrito.html" class="anchorNav">Carrito</a>
+            </li>
+          </ul>
     </nav>
 
     <h1 class="titulo_principal">Shopping Madagascar</h1>
@@ -37,30 +50,30 @@
       <div class="container_home1">
         <div class="productos_home">
           <h2 class="titulo_producto">Buzos</h2>
-          <a href="./sections/productos.html">
+          <a href="./sections/productos.html" class="aImg">
             <img class="producto_imagen" src="./img/buzo.jpeg" alt="buzo"/>
           </a>
         </div>
 
         <div class="productos_home">
           <h2 class="titulo_producto">Gorros</h2>
-          <a href="./sections/productos.html">
-            <img class="producto_imagen" src="./img/gorro.jpeg" alt="gorro"
-          /></a>
+          <a href="./sections/productos.html" class="aImg">
+            <img class="producto_imagen" src="./img/gorro.jpeg" alt="gorro"/>
+          </a>
         </div>
       </div>
 
       <div class="container_home2">
         <div class="productos_home">
           <h2 class="titulo_producto">Mochilas</h2>
-          <a href="./sections/productos.html">
+          <a href="./sections/productos.html" class="aImg">
             <img class="producto_imagen" src="./img/mochila.jpeg" alt="mochila"/>
           </a>
         </div>
 
         <div class="productos_home">
           <h2 class="titulo_producto">Remeras</h2>
-          <a href="./sections/productos.html">
+          <a href="./sections/productos.html" class="aImg">
             <img class="producto_imagen" src="./img/remera.jpeg" alt="remera"
           /></a>
         </div>
@@ -71,11 +84,11 @@
       <div class="footer_elements">
         <p class="footer_texto">Madagascar Shooping - 2023 ©</p>
         <p class="footer_signing">Website by Torres Mendioroz & Lorenzo ©</p>
-        <a href="./sections/contacto.html">
+        <a href="./sections/contacto.html" class="aFooter">
             <p class="footer_texto">Contactanos</p>
         </a>
       </div>
     </footer>
-
+    <script src="js/menu.js"></script>
   </body>
 </html>

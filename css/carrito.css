@@ -25,10 +25,7 @@ body {
     height: 50px;
     width: 50px;
     padding-left: 260%; /* le doy mas padding, ya que corri los items */
-    
-    
-    
-} 
+    } 
 
 nav {
     position: fixed;
