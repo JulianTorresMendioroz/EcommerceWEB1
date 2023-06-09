@@ -401,10 +401,20 @@ ul.navigation li:hover {
     .producto_imagen {
         display: flex;
         justify-content: center;
-        min-height: 400px;
-        min-width: 400px;
-        max-width: 400px;
-        max-height: 400px;
+        min-height: 350px;
+        min-width: 350px;
+        max-width: 350px;
+        max-height: 350px;
         border-radius: 10%;
    }
+   .titulo_producto {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+   /*sobreescribo lo heredado*/
+    color: #ffffff;
+    padding-bottom: 0.3%;
+    padding-top: 1%;
+}
 }
