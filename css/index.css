@@ -417,4 +417,11 @@ ul.navigation li:hover {
     padding-bottom: 0.3%;
     padding-top: 1%;
 }
+
+.slogan {
+    padding-top: 3.2%;
+    padding-bottom: 10%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
 }
