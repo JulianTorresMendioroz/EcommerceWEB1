@@ -1,163 +1,305 @@
-*{
+/* MEDIA Q IPH 12PRO 390PX x 844px */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-@font-face{
+@font-face {
     font-family: 'Bruno Ace';
     src: url(../fonts/BrunoAce-Regular.ttf);
 }
-
-
 body {
     font-family: 'Bruno Ace';
-    background-image: linear-gradient(to right, rgb(7,8,10) 10%, black 90%);
-}
-
-/*----------NAVBAR-------------------------------------------------------------------------------------------------------------*/
-.logo_navbar {
-    height: 100px;
-    width: 150px;  
-    margin-left: 170px;
-    padding-left: auto;  
-}
-
-.logo_carrito {
-    height: 50px;
-    width: 50px;
-    padding-left: 260%; /* le doy mas padding, ya que corri los items */
-    
-    
-    
-} 
-nav {
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    margin-left: auto;
-    z-index: 1000;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: end; /* agrego flex end */
-}
-
-.navbar_home {
-    display: flex;
-    color:aliceblue;
-    margin-left: 250px;
-    padding-top: 40px;
-    padding-left: 20px;
-    justify-content: center;
-    width: 25%;
-}
-
-.navbar_productos {
-    display: flex;
-    color:aliceblue;
-    margin-left: 250px;
-    padding-top: 40px;
-    padding-left: 20px;
-    justify-content: center;
-    width: 25%;
-}
-
-.navbar_contacto {
-    display: flex;
-    color:aliceblue;
-    margin-left: 250px;
-    padding-top: 40px;
-    padding-left: 20px;
-    justify-content: center;
-    width: 25%;
-}
-.navbar_carrito {
-    display: flex;
-    color:aliceblue;
-
-    padding-top: 25px;
-    padding-left: 10px;
-    justify-content: center;
-    width: 25%;
-}
-
-.navbar {
-    height: 100px;
-    background-color: black;
-    display: flex;
-    width: 100%;
-}
-
-.items_navbar{
-    list-style-type: none;
-    color: rgb(248, 244, 244);
-    display: flex;
-    justify-content: space-around;
-    margin-right:0px;
-    width: 100%;
-    margin-right: 25%; /* le di margen */
+    background-image: linear-gradient(to right, rgb(7, 8, 10) 10%, black 90%);
 }
 
 a {
     text-decoration-line: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
 }
-
-/*-----------TITLES----------------------------------------------------------------------------------------------------------*/
+/*----------NAVBAR-------------------------------------------------------------------------------------------------------------*/
+.navbar {
+    display: none;
+    height: 8%;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    margin-left: auto;
+    justify-content: space-around;
+    z-index: 1000;
+}
+/*----TITULOS------------------------------------------------------------------------------------------------------------*/
 .titulo_principal {
-    padding-top: 20px;
-    margin-top: 5%;
+    padding-top: 2.5%;
+    margin-top: 6.3%;
     text-align: center;
-    font-size: 60px;
-    color:rgb(255, 255, 255);
+    font-size: 8vw;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
 }
-
 .slogan {
-
-    padding-top: 25px;
+    padding-top: 3.2%;
     text-align: center;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
-
-.message_container {
+/*----------ESTRUCTURA------------------------------------------------------------------------------------------------------*/
+.contactTitle {
     display: flex;
     justify-content: center;
-    margin: 5% 5%;
-    padding: auto;
+    color: aliceblue;
+    margin-top:5%;
 }
+.container_principal {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 1.3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: auto;
+    overflow: auto;
+}
+.purchase_success_message{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    padding-top: 1em;
+    padding-bottom:1em;
+    margin-top:40%;
+    text-decoration: underline;
+    margin-bottom:65%;
 
-.purchase_success_message {
-    color: white;
-    padding-top: 10%;
-    padding-bottom: 12%;
 }
-/*------------FOOTER--------------------------------------------------*/
-.footer{
-    height: 60px;
+/*----------FOOTER------------------------------------------------------------------------------------------------------*/
+.footer {
+    height: 7.5%;
     width: auto;
     background-color: black;
     display: flex;
+    justify-content: center;
+    align-items: baseline;
     flex-direction: row;
-    padding-top: 45px;
+    margin-top: 8%;
+    padding-top: 4%;
+    padding-bottom: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
     text-align: center;
-
+    font-size: 0.7em;
 }
 .footer_elements {
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-.footer_signing{
+.footer_signing {
     display: flex;
-    justify-content: baseline;
     color: white;
     font-weight: 600;
-    padding-right:9%;
+    max-width: 30%;
 }
 .footer_texto {
-    display: flex;
     justify-content: baseline;
+    max-width: 30%;
+    display: flex;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
+}
+.aFooter {
+    max-width: 30%;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+/* NAVBAR --------------------------------------------------------------MOBILE*/
+.NavMobile {
+    font-family: inherit;
+    font-size: 0.5em;
+    background-color: linear-gradient(to right, rgba(7, 8, 10, 255) 90%, black 10%) 
+}
+.logoMobile {
+    width: 100%;
+    height: 100%;
+}
+.aMobile{
+    width: 20%;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.btn_menu {
+    color: white;
+    padding: 15px;
+    font-size: 2em;
+}
+.btn_menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu {
+    border-bottom: 2px solid gray;
+    width: 100%;
+    display: flex;
+    background-color: linear-gradient(to right, rgba(7, 8, 10, 100) 90%, black 10%);
+}
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+ul.navigation.show {
+    display: flex;
+}
+ul.navigation li {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 15px 20px;
+}
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+ul.navigation li:hover {
+    background-color: gray;
+}
+/*DESKTOP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++660PX*/
+@media screen and (min-width: 660px) {
+    .NavMobile {
+        display: none;
+   }
+   /* en desktop ocultamos siempre el boton del menu */
+    .btn_menu {
+        display: none;
+   }
+   /* cambiamos la direccion del flex */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+   }
+   /*----------NAVBAR-------------------------------------------------------------------------------------------------------------*/
+    nav {
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        margin-left: auto;
+        justify-content: space-around;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+   }
+    .logo_navbar {
+        display: flex;
+        height: 100%;
+        width: auto;
+        margin-left: 0;
+   }
+    li {
+        display: flex;
+        height: 100%;
+        width: 100%;
+   }
+    .navbar_home {
+        display: flex;
+        color: aliceblue;
+        margin-left: 0%;
+        padding-top: 2%;
+        padding-left: 0%;
+        justify-content: center;
+        width: 25%;
+   }
+    .navbar_productos {
+        display: flex;
+        color: aliceblue;
+        margin-left: 0%;
+        padding-top: 2%;
+        padding-left: 0%;
+        justify-content: center;
+        width: 25%;
+   }
+    .navbar_contacto {
+        display: flex;
+        color: aliceblue;
+        margin-left: 0%;
+        padding-top: 2%;
+        padding-left: 0%;
+        justify-content: center;
+        width: 25%;
+   }
+    .navbar_carrito {
+        display: flex;
+        color: aliceblue;
+        margin-left: 0%;
+        padding-top: 2%;
+        padding-left: 0%;
+        justify-content: center;
+        width: 25%;
+   }
+    .navbar {
+        height: 11%;
+        background-color: black;
+        display: flex;
+        width: 100%;
+   }
+    .items_navbar {
+        list-style-type: none;
+        color: rgb(248, 244, 244);
+        display: flex;
+        width: 100%;
+        margin-right: 0%;
+        align-items: flex-start;
+        align-content: center;
+        flex-direction: row;
+   }
+   /*----TITULOS------------------------------------------------------------------------------------------------------------*/
+    .titulo_principal {
+        padding-top: 4.3%;
+        margin-top: 8.65%;
+        text-align: center;
+        font-size: 5vw;
+        color: rgb(255, 255, 255);
+   }
+    .slogan {
+        padding-top: 1.6%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 4%;
+   }
+   /*----------FOOTER------------------------------------------------------------------------------------------------------*/
+    .footer {
+        height: 4vh;
+        width: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding-top: 3.4%;
+        text-align: center;
+        margin-top: 4%;
+   }
+    .footer_elements {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+   }
+    .footer_signing {
+        display: flex;
+        color: white;
+        font-weight: 600;
+        padding-right: 3.6%;
+   }
+    .footer_texto {
+        display: flex;
+        color: white;
+        font-weight: 600;
+   }
+    /*CIERRA MEDIA QUERY*/
 }
