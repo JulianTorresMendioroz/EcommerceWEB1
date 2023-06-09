@@ -31,6 +31,7 @@ function deleteValues() {
   seeTable();
 }
 
+
 function autoProd(){
 
     let obj1 = {
