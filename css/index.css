@@ -20,22 +20,6 @@ body {
     font-family: 'Bruno Ace';
     src: url(../fonts/BrunoAce-Regular.ttf);
 }
-body {
-    font-family: 'Bruno Ace';
-    background-image: linear-gradient(to right, rgb(7, 8, 10) 10%, black 90%);
-}
-/*----------NAVBAR-------------------------------------------------------------------------------------------------------------*/
-.navbar {
-    display: none;
-    height: 8%;
-    background-color: black;
-    width: 100%;
-    position: fixed;
-    top: 0%;
-    margin-left: auto;
-    justify-content: space-around;
-    z-index: 1000;
-}
 a {
     text-decoration-line: none;
     color: white;
@@ -155,8 +139,8 @@ a {
 /* NAVBAR --------------------------------------------------------------MOBILE*/
 .NavMobile {
     font-family: inherit;
-    font-size: 0.5em;
-    background-color: linear-gradient(to right, rgba(7, 8, 10, 255) 90%, black 10%) 
+    font-size: 0.5em; 
+    background-color: rgba(7, 8, 10, 100);
 }
 .logoMobile {
     width: 100%;
@@ -184,7 +168,6 @@ a {
     border-bottom: 4px solid gray;
     width: 100%;
     display: flex;
-    background-color: linear-gradient(to right, rgba(7, 8, 10, 100) 90%, black 10%);
 }
 ul.navigation {
     width: 100%;
@@ -210,9 +193,6 @@ ul.navigation li:hover {
 }
 /*DESKTOP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++660PX*/
 @media screen and (min-width: 660px) {
-    .NavMobile {
-        display: none;
-   }
    /* en desktop ocultamos siempre el boton del menu */
     .btn_menu {
         display: none;
@@ -223,7 +203,8 @@ ul.navigation li:hover {
         flex-direction: row;
    }
    ----------NAVBAR-------------------------------------------------------------------------------------------------------------
-    nav {
+    .NavMobile {
+        display:flex;
         position: fixed;
         top: 0%;
         width: 100%;
@@ -233,9 +214,19 @@ ul.navigation li:hover {
         display: flex;
         flex-direction: row;
    }
-    .logo_navbar {
+   .menu {
+        font-size: 2em;
+        font-weight: bold;
+        border-bottom: 4px solid gray;
+        width: 100%;
+        height: 6vh;
         display: flex;
-        height: 100%;
+   }
+    .logo {
+        background: rgba(7,8,10,100);
+        justify-content: center;
+        display: flex;
+        height: 80%;
         width: auto;
         margin-left: 0;
    }
@@ -244,7 +235,7 @@ ul.navigation li:hover {
         height: 100%;
         width: 100%;
    }
-    .navbar_home {
+    li {
         display: flex;
         color: aliceblue;
         margin-left: 0%;
@@ -252,40 +243,14 @@ ul.navigation li:hover {
         padding-left: 0%;
         justify-content: center;
         width: 25%;
-   }
-    .navbar_productos {
-        display: flex;
-        color: aliceblue;
-        margin-left: 0%;
-        padding-top: 2%;
-        padding-left: 0%;
-        justify-content: center;
-        width: 25%;
-   }
-    .navbar_contacto {
-        display: flex;
-        color: aliceblue;
-        margin-left: 0%;
-        padding-top: 2%;
-        padding-left: 0%;
-        justify-content: center;
-        width: 25%;
-   }
-    .navbar_carrito {
-        display: flex;
-        color: aliceblue;
-        margin-left: 0%;
-        padding-top: 2%;
-        padding-left: 0%;
-        justify-content: center;
-        width: 25%;
-   }
+    }
+
     .navbar {
         height: 11%;
         background-color: black;
         display: flex;
         width: 100%;
-   }
+    }
     .items_navbar {
         list-style-type: none;
         color: rgb(248, 244, 244);
@@ -416,12 +381,12 @@ ul.navigation li:hover {
     color: #ffffff;
     padding-bottom: 0.3%;
     padding-top: 1%;
-}
+    }
 
-.slogan {
-    padding-top: 2.2%;
-    padding-bottom: 10%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
+    .slogan {
+        padding-top: 2.2%;
+        padding-bottom: 10%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
 }
