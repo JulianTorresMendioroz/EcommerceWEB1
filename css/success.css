@@ -117,8 +117,8 @@ a {
 /* NAVBAR --------------------------------------------------------------MOBILE*/
 .NavMobile {
     font-family: inherit;
-    font-size: 0.5em;
-    background-color: linear-gradient(to right, rgba(7, 8, 10, 255) 90%, black 10%) 
+    font-size: 0.5em; 
+    background-color: rgba(7, 8, 10, 100);
 }
 .logoMobile {
     width: 100%;
@@ -143,10 +143,9 @@ a {
     text-decoration: none;
 }
 .menu {
-    border-bottom: 2px solid gray;
+    border-bottom: 4px solid gray;
     width: 100%;
     display: flex;
-    background-color: linear-gradient(to right, rgba(7, 8, 10, 100) 90%, black 10%);
 }
 ul.navigation {
     width: 100%;
@@ -172,92 +171,56 @@ ul.navigation li:hover {
 }
 /*DESKTOP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++660PX*/
 @media screen and (min-width: 660px) {
-    .NavMobile {
-        display: none;
-   }
-   /* en desktop ocultamos siempre el boton del menu */
-    .btn_menu {
-        display: none;
-   }
-   /* cambiamos la direccion del flex */
-    ul.navigation {
-        display: flex;
-        flex-direction: row;
-   }
-   /*----------NAVBAR-------------------------------------------------------------------------------------------------------------*/
-    nav {
-        position: fixed;
-        top: 0%;
-        width: 100%;
-        margin-left: auto;
-        justify-content: space-around;
-        z-index: 1000;
-        display: flex;
-        flex-direction: row;
-   }
-    .logo_navbar {
-        display: flex;
-        height: 100%;
-        width: auto;
-        margin-left: 0;
-   }
-    li {
-        display: flex;
-        height: 100%;
-        width: 100%;
-   }
-    .navbar_home {
-        display: flex;
-        color: aliceblue;
-        margin-left: 0%;
-        padding-top: 2%;
-        padding-left: 0%;
-        justify-content: center;
-        width: 25%;
-   }
-    .navbar_productos {
-        display: flex;
-        color: aliceblue;
-        margin-left: 0%;
-        padding-top: 2%;
-        padding-left: 0%;
-        justify-content: center;
-        width: 25%;
-   }
-    .navbar_contacto {
-        display: flex;
-        color: aliceblue;
-        margin-left: 0%;
-        padding-top: 2%;
-        padding-left: 0%;
-        justify-content: center;
-        width: 25%;
-   }
-    .navbar_carrito {
-        display: flex;
-        color: aliceblue;
-        margin-left: 0%;
-        padding-top: 2%;
-        padding-left: 0%;
-        justify-content: center;
-        width: 25%;
-   }
-    .navbar {
-        height: 11%;
-        background-color: black;
-        display: flex;
-        width: 100%;
-   }
-    .items_navbar {
-        list-style-type: none;
-        color: rgb(248, 244, 244);
-        display: flex;
-        width: 100%;
-        margin-right: 0%;
-        align-items: flex-start;
-        align-content: center;
-        flex-direction: row;
-   }
+    /* en desktop ocultamos siempre el boton del menu */
+     .btn_menu {
+         display: none;
+    }
+    /* cambiamos la direccion del flex */
+     ul.navigation {
+         display: flex;
+         flex-direction: row;
+    }
+    /*----------NAVBAR-------------------------------------------------------------------------------------------------------------*/
+    div .NavMobile {
+         display:flex;
+         position: fixed;
+         top: 0%;
+         width: 100%;
+         margin-left: auto;
+         justify-content: space-around;
+         z-index: 1000;
+         display: flex;
+         flex-direction: row;
+    }
+    div .menu {
+         font-size: 2em;
+         font-weight: bold;
+         border-bottom: 4px solid gray;
+         width: 100%;
+         height: 6vh;
+         display: flex;
+    }
+     .NavMobile .logo {
+         background: rgba(7,8,10,100);
+         justify-content: center;
+         display: flex;
+         height: 80%;
+         width: auto;
+         margin-left: 0;
+         max-height: 170px;
+    }
+     .navigation li {
+         display: flex;
+         height: 100%;
+         width: 100%;
+         display: flex;
+         color: aliceblue;
+         margin-left: 0%;
+         padding-top: 2%;
+         padding-left: 0%;
+         justify-content: center;
+         width: 25%;
+     }
    /*----TITULOS------------------------------------------------------------------------------------------------------------*/
     .titulo_principal {
         padding-top: 4.3%;
