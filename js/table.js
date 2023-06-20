@@ -1,8 +1,6 @@
 let tableArray = [{
-    "cantidad": 3,
-    "producto": "Buzo Negro"
-
 }];
+deleteValues(); //cargo arreglo y borro sus valores
 
 function seeTable() {
   let contentTable = document.querySelector(".content-table tbody");
@@ -51,7 +49,6 @@ function autoProd(){
 
     tableArray.push(obj1, obj2, obj3);
     seeTable();
-
 }
 
 function addProduct() {
@@ -62,7 +59,10 @@ function addProduct() {
     cantidad: inputTableQuantity,
     producto: inputTableProd
   };
-
+  if (!inputTableQuantity  && !inputTableProd){
+    alert ("Debe elegir un producto y cantidad!")
+    return;
+}
   tableArray.push(newData);
   seeTable();
 }
