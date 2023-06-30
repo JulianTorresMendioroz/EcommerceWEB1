@@ -157,10 +157,9 @@ a {
 }
 
 .menu_img{
-
     width: 20px;
     height: 20px;
-
+    margin-right: 2%;
 }
 
 .btn_menu {
@@ -254,7 +253,7 @@ ul.navigation li:hover {
    /*----TITULOS------------------------------------------------------------------------------------------------------------*/
     .titulo_principal {
         padding-top: 4.7%;
-        margin-top: 8.63%;
+        margin-top: 3%;
         text-align: center;
         font-size: 5vw;
         color: rgb(255, 255, 255);
@@ -263,7 +262,7 @@ ul.navigation li:hover {
         padding-top: 1.6%;
         text-align: center;
         color: rgb(255, 255, 255);
-        margin-bottom: 4%;
+        margin-bottom: 1%;
    }
    /*----------ESTRUCTURA------------------------------------------------------------------------------------------------------*/
     .container_principal {
@@ -352,6 +351,13 @@ ul.navigation li:hover {
    /*CIERRA MEDIA QUERY*/
 }
 @media screen and (min-width: 1200px){
+    .titulo_principal {
+        padding-top: 2%;
+        margin-top: 2%;
+        text-align: center;
+        font-size: 5vw;
+        color: rgb(255, 255, 255);
+   }
 
     .producto_imagen {
         display: flex;
@@ -363,19 +369,17 @@ ul.navigation li:hover {
         border-radius: 10%;
    }
    .titulo_producto {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    margin-top: 10%;
-   /*sobreescribo lo heredado*/
-    color: #ffffff;
-    padding-bottom: 0.3%;
-    padding-top: 1%;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        color: #ffffff;
+        padding-bottom: 0.3%;
+        padding-top: 5%;
     }
 
     .slogan {
         padding-top: 2.2%;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         text-align: center;
         color: rgb(255, 255, 255);
     }
