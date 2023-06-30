@@ -11,7 +11,7 @@ let tableArray = [
     "cantidad": "2",
     "producto": "Gorro Negro",
   }
-  ];
+];
 
 function seeTable() {
   let contentTable = document.querySelector(".content-table tbody");
@@ -61,33 +61,31 @@ function autoProd(){
     tableArray.push(obj1, obj2, obj3);
     seeTable();
 }
+let form = document.querySelector("#form_input");
 
-function addProduct() {
+function addProduct(event) {
+  event.preventDefault();
+  let formData = new FormData(form);
   let inputTableProd = document.querySelector(".input_prod").value;
   let inputTableQuantity = document.querySelector(".input_quantity").value;
-
   let newData = {
     cantidad: inputTableQuantity,
     producto: inputTableProd
   };
-  if (!inputTableQuantity  && !inputTableProd){
-    alert ("Debe elegir un producto y cantidad!")
+  if (inputTableProd === "Buzo Negro" || inputTableProd === "Remera Blanca" || inputTableProd === "Gorro" || inputTableProd === "Mochila"){
+      tableArray.push(newData);
+      seeTable();
     return;
-} else if(inputTableProd !== ("Buzo Negro") || ("Remera Blanca") || ("Gorro") || ("Mochila")){
+  }
+  else{
     alert ("Escriba un producto valido tal cual se muestra en el texto!")
-    return;
-
-}
-  tableArray.push(newData);
-  seeTable();
+  }
 }
 
-let buttonAddProd = document.querySelector(".add_product");
-buttonAddProd.addEventListener("click", addProduct);
+form.addEventListener("submit", addProduct);
 
-let buttonDeleteAll = document.querySelector(".delete_product");
-buttonDeleteAll.addEventListener("click", deleteValues);
+form.addEventListener("reset", deleteValues);
 
-let buttonAutoProd = document.querySelector(".auto_product");
-buttonAutoProd.addEventListener("click", autoProd)
+let buttonAutoFill = document.querySelector(".auto_product");
+buttonAutoFill.addEventListener("click", autoProd);
 

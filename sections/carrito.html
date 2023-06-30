@@ -29,20 +29,21 @@
     <div class="container_general">
         <h1 class="titulo_principal">Shopping Madagascar</h1>
         <h3 class="slogan">"Olvida las reglas, si te gusta, cómpralo."</h3>
-
-        <div class="inputs">
-            <h3 class="slogan">Elija el producto entre: Buzo Negro, Gorro, Remera Blanca y Mochila</h3>
-            <input class="input_prod" type="text">
-            
-            <h3 class="slogan">Elija la cantidad</h3>
-            <input class="input_quantity" type="text">
-        </div>
-        <section class="buttons_table">
-            <button class="add_product">AGREGAR PRODUCTO Y CANTIDAD</button>
-            <button class="auto_product">LLENAR AUTO X3</button>
-            <button class="delete_product">ELIMINAR DATOS</button>
-        </section>
-
+        <form id="form_input">
+            <div class="inputs">
+                <h3 class="slogan">Elija el producto entre: Buzo Negro, Gorro, Remera Blanca y Mochila</h3>
+                <input class="input_prod" type="text" required>
+                
+                <h3 class="slogan">Elija la cantidad</h3>
+                <input class="input_quantity" type="number" required>
+            </div>
+            <section class="buttons_table">
+                <button type="submit" class="add_product">AGREGAR PRODUCTO Y CANTIDAD</button>
+                <button type="button" class="auto_product">LLENAR AUTO X3</button>
+                <button type="reset" class="delete_product">ELIMINAR DATOS</button>
+            </section>
+        </form>
+       
         <div class="div_tabla">
             <table class="content-table">
                 <thead class="table_head">
