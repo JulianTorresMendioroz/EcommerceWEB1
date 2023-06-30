@@ -1,6 +1,17 @@
-let tableArray = [{
-}];
-deleteValues(); //cargo arreglo y borro sus valores
+let tableArray = [
+  {
+    "cantidad": "3",
+    "producto": "Buzo Negro DC",
+  },
+  {
+    "cantidad": "5",
+    "producto": "Remera Blanca",
+  },
+  {
+    "cantidad": "2",
+    "producto": "Gorro Negro",
+  }
+  ];
 
 function seeTable() {
   let contentTable = document.querySelector(".content-table tbody");
@@ -62,6 +73,10 @@ function addProduct() {
   if (!inputTableQuantity  && !inputTableProd){
     alert ("Debe elegir un producto y cantidad!")
     return;
+} else if(inputTableProd !== ("Buzo Negro") || ("Remera Blanca") || ("Gorro") || ("Mochila")){
+    alert ("Escriba un producto valido tal cual se muestra en el texto!")
+    return;
+
 }
   tableArray.push(newData);
   seeTable();
