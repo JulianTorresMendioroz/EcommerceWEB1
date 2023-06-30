@@ -108,6 +108,14 @@ a {
     align-items: center;
     color: white;
 }
+
+.menu_img{
+
+    width: 20px;
+    height: 20px;
+
+}
+
 .btn_menu {
     color: white;
     padding: 15px;
@@ -310,7 +318,7 @@ ul.navigation li:hover {
 /*DESKTOP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++660PX*/
 @media screen and (min-width: 660px) {
     /* en desktop ocultamos siempre el boton del menu */
-     .btn_menu {
+     .menu_img {
          display: none;
     }
     /* cambiamos la direccion del flex */
