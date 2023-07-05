@@ -20,8 +20,9 @@ let inputCaptcha = document.querySelector(".input_captcha");
 
 inputCaptcha.maxLength=`${longitud}`;
 
+let form = document.querySelector(".form");
 function verificarCaptcha (event) {
-
+    let formData = new FormData(form)
     if(captchaDigitos === inputCaptcha.value) {
         
         let pCorrecto = document.querySelector("#captcha_result")
@@ -35,11 +36,9 @@ function verificarCaptcha (event) {
         let pIncorrecto = document.querySelector("#captcha_result");
         pIncorrecto.classList.add("captcha_error_text");
         pIncorrecto.innerHTML = "Captcha incorrecto, valide el captcha correctamente";
-        inputCaptcha.classList.add("captcha_error")
-        
+        inputCaptcha.classList.add("captcha_error")  
     }
-
+    
     event.preventDefault();
 }
-
-buttonCaptchaValid.addEventListener("click", verificarCaptcha);
+form.addEventListener("submit", verificarCaptcha);
