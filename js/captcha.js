@@ -23,6 +23,9 @@ inputCaptcha.maxLength=`${longitud}`;
 let form = document.querySelector(".form");
 function verificarCaptcha (event) {
     let formData = new FormData(form)
+
+    let peo= 0;
+
     if(captchaDigitos === inputCaptcha.value) {
         
         let pCorrecto = document.querySelector("#captcha_result")
